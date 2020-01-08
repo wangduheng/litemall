@@ -3,6 +3,9 @@ package org.linlinjava.litemall.core.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * @ConfigurationProperties 注解标识 *.property or *.yml 文件属性获取
+ */
 @Configuration
 @ConfigurationProperties(prefix = "litemall.wx")
 public class WxProperties {

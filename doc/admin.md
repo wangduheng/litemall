@@ -13,7 +13,6 @@
 * 管理后台后端, 即litemall-admin-api模块
   * Spring Boot 2.x
   * Spring MVC
-
 目前存在的问题：
 
 * `缺失`首页中实现一些小组件，同时点击能够跳转相应页面

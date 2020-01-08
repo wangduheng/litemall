@@ -17,6 +17,10 @@ import javax.validation.ConstraintViolationException;
 import javax.validation.ValidationException;
 import java.util.Set;
 
+/**
+ * 全局异常配置注解 @ControllerAdvice
+ *
+ */
 @ControllerAdvice
 @Order
 public class GlobalExceptionHandler {

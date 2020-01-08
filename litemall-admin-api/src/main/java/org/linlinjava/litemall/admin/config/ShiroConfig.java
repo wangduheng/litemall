@@ -8,6 +8,7 @@ import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.linlinjava.litemall.admin.shiro.AdminAuthorizingRealm;
 import org.linlinjava.litemall.admin.shiro.AdminWebSessionManager;
+import org.linlinjava.litemall.admin.shiro.MySessionManager;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,6 +17,9 @@ import org.springframework.context.annotation.DependsOn;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * https://juejin.im/post/5cff0cfc5188250d28510681
+ */
 @Configuration
 public class ShiroConfig {
 
@@ -46,7 +50,7 @@ public class ShiroConfig {
     @Bean
     public SessionManager sessionManager() {
 
-        return new AdminWebSessionManager();
+        return new MySessionManager();
     }
 
     @Bean

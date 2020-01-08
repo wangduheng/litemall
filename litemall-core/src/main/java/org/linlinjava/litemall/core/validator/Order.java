@@ -9,6 +9,11 @@ import java.lang.annotation.Target;
 import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
+/**
+ * https://juejin.im/post/5d428bdae51d456201486db7
+ * @Constraint 注解校验 ConstraintValidator.class
+ *
+ */
 @Target({METHOD, FIELD, PARAMETER})
 @Retention(RUNTIME)
 @Documented

@@ -42,7 +42,7 @@ public class MailTest {
     @Configuration
     @Import(Application.class)
     static class ContextConfiguration {
-        @Bean
+        @Bean("executor2")
         @Primary
         public Executor executor() {
             return new SyncTaskExecutor();
