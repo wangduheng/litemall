@@ -45,7 +45,7 @@
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://127.0.0.1:3306/litemall?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC&amp;verifyServerCertificate=false&amp;useSSL=false"
                         userId="root"
-                        password="Com.hengry88"/>
+                        password="hengry88"/>
 
         <javaTypeResolver>
             <property name="useJSR310Types" value="true"/>
